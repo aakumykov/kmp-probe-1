@@ -8,7 +8,7 @@ kotlin {
     linuxX64 {
         binaries {
             executable {
-                entryPoint = "main"
+		entryPoint = "com.github.aakumykov.kmp_native_probe_1.main"
             }
         }
     }
