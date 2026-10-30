@@ -23,14 +23,19 @@ kotlin {
     }
 
     sourceSets {
+	val commonMain by getting {
+            dependencies {
+                implementation(project(":db")) 
+            }
+        }
         val linuxX64Main by getting {
             dependencies {
-                implementation(project(":db"))
+                implementation(project(":db")) 
             }
         }
 	val androidMain by getting {
             dependencies {
-                implementation(project(":db"))
+                implementation(project(":db")) 
                 // При необходимости:
                 // implementation("androidx.appcompat:appcompat:1.7.0")
                 // implementation("androidx.core:core-ktx:1.13.1")
