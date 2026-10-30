@@ -1,3 +1,3 @@
 plugins {
-    // Плагин применяется только в подмодулях, здесь — пусто
+    kotlin("multiplatform") version "2.1.20" apply false
 }
